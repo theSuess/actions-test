@@ -10,4 +10,4 @@ jobs:
         version: 'v1.21.2-k3s1'
     - run: |
         kubectl get nodes
-        k3s crt images
+        docker exec k3s-v1.21.2-k3s1 ctr images ls
